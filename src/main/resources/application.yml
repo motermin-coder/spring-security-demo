@@ -1,0 +1,23 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: security-sever
+  security:
+    user:
+      name: tom
+      password: 12345
+      roles:
+        - ADMIN
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/security
+    username: admin
+    password: admin
+mybatis:
+  mapper-locations: classpath:/mappers/*.xml
+token:
+  header: Authorization
+  secret: adcdefg
+  expire:
+    time: 2
