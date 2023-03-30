@@ -43,7 +43,6 @@ public class SecurityConfig {
                                 .anonymous()
                                 .and()
                 )
-//                .sessionManagement(session -> session.maximumSessions(1).maxSessionsPreventsLogin(true))
                 .build();
     }
 
