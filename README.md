@@ -1,26 +1,18 @@
 ### Spring Security
     SecurityContextHolder - 存放验证信息
-
     SecurityContext - 获取当前登录用户的验证信息
-
     Authentication - 可以是AuthenticationManager的输入，以提供用户提供的认证凭证，或来自SecurityContext的当前用户。
-
     GrantedAuthority - 认证用户被授予的权限
-
     AuthenticationManager - 定义了Spring Security的过滤器如何执行验证
-
     ProviderManager - 是AuthenticationManager最常见的实现。
-
     AuthenticationProvider - 由ProviderManager用于执行特定类型的认证。
-
-    Request Credentials with AuthenticationEntryPoint - 用于向客户端请求证书（即重定向到一个登录页面，发送一个WWW-Authenticate响应，等等）
-
+    请求的Credentials和AuthenticationEntryPoint - 用于向客户端请求证书（即重定向到一个登录页面，发送一个WWW-Authenticate响应，等等）
     AbstractAuthenticationProcessingFilter - 一个用于认证的基础过滤器。这也让我们很好地了解了认证的高层流程，以及各部分如何协同工作。
 
 
 #### 1、表单登录
 
-表单请求：流程
+##### 表单请求：流程
 
 ![img.png](img.png)
 
@@ -30,7 +22,7 @@
 
 3.重定向到登录页面
 
-验证用户流程：
+##### 验证用户流程：
 
 ![img_1.png](img_1.png)
 
